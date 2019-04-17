@@ -2227,6 +2227,11 @@ TCP：状态控制码（Code，Control Flag），占 6 比特，含义如下：
 * SYN：同步比特(Synchronous)，SYN 置为 1，就表示这是一个连接请求或连接接受报文，通常带有 SYN 标志的封包表示『主动』要连接到对方的意思。
 * FIN：终止比特(Final)，用来释放一个连接。当 `FIN＝1` 时，表明此报文段的发送端的数据已发送完毕，并要求释放运输连接。
 
+TCP超时重传机制(RTO):
+- 重传超时时间 RTO
+- 连接往返时间 RTT
+- karn算法，
+
 #### UDP
 
 * UDP（User Datagram Protocol，用户数据报协议）是 OSI（Open System Interconnection 开放式系统互联） 参考模型中一种无连接的传输层协议，提供面向事务的简单不可靠信息传送服务，其传输的单位是用户数据报。
